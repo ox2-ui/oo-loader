@@ -1,12 +1,12 @@
 template(name="ooLoader")
   if overlay
-    .oo-Loader--wrapper-overlay
+    .oo-Loader--wrapper-overlay.no-drag
       .no-drag(oo-Loader="{{oo}}")
         .bounce1(oo-Color="back:{{color}}")
         .bounce2(oo-Color="back:{{color}}")
         .bounce3(oo-Color="back:{{color}}")
   else
-    .oo-Loader--wrapper-static
+    .oo-Loader--wrapper-static.no-drag
       .no-drag(oo-Loader="{{oo}}")
         .bounce1(oo-Color="back:{{color}}")
         .bounce2(oo-Color="back:{{color}}")
