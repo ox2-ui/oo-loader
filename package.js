@@ -1,7 +1,7 @@
 Package.describe({
   name: 'ox2:loader',
-  summary: 'TESTING_DO_NOT_USE Loaders and spinners',
-  version: '1.1.0',
+  summary: 'DO NOT USE',
+  version: '1.2.0',
   git: ' /* Fill me in! */ '
 });
 
@@ -13,11 +13,12 @@ Package.onUse(function(api) {
   api.versionsFrom('1.2.0.2');
   // Core
   api.use([
-    'templating'
+    'templating',
+    'less'
     ]);
   // 3rd party
   api.use([
-    'lauricio:less-autoprefixer@2.5.0_3','mquandalle:jade@0.4.1'
+    'mquandalle:jade@0.4.9'
     ]);
   api.addFiles('lib/oo-loader.jade', C);
   api.addFiles('lib/oo-loader.less', C);
